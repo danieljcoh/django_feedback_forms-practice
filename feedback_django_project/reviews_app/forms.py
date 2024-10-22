@@ -1,8 +1,5 @@
 from django import forms
-
 from .models import Review
-
-
 
 
 class ReviewForm(forms.Form):
@@ -26,7 +23,7 @@ class ReviewForm(forms.ModelForm):
             "rating": "Your Rating",
         }
         error_messages = {
-            "user_name" = {
+            "user_name" : {
                 "required": "Your name must not be empty",
                 "max_length": "Please enter a shorter name"
             }
